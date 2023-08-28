@@ -123,9 +123,9 @@ function ProfileInfo() {
 
 
           </CardBody>
-          <CardFooter className='text-center'>
+          {/* <CardFooter className='text-center'>
             <Button color='success'>Update Profile</Button>
-          </CardFooter>
+          </CardFooter> */}
         </Card>
       </div>
     )

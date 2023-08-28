@@ -69,12 +69,12 @@ const ViewUserProfile = ({ user, updateProfileClick }) => {
                         </tr>
                     </tbody>
                 </Table>
-
+{/* 
                 {currentUser ? (currentUser.id == user.id) ? (
                     <CardFooter className='text-center'>
                         <Button onClick={updateProfileClick} color='warning' >Update Profile</Button>
                     </CardFooter>
-                ) : '' : ''}
+                ) : '' : ''} */}
 
             </CardBody>
         </Card>

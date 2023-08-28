@@ -80,11 +80,14 @@ const CustomNavbar = () => {
                 </DropdownItem>
 
                 <DropdownItem
-                  tag={ReactLink}
-                  to="https://instagram.com/blogbadminton?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+                  tag="a"
+                  href="https://instagram.com/blogbadminton?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+                  target="_self"
+                  rel="noopener noreferrer"
                 >
                   Instagram
                 </DropdownItem>
+
                 <DropdownItem divider />
               </DropdownMenu>
             </UncontrolledDropdown>
