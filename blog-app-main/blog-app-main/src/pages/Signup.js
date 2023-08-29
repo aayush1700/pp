@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import { signUp } from "../services/user-service";
 import { toast } from "react-toastify";
 import {
@@ -17,6 +18,7 @@ import {
   Row,
 } from "reactstrap";
 import Base from "../components/Base";
+import { Navigate } from "react-router-dom";
 const Signup = () => {
   const [data, setData] = useState({
     name: "",
@@ -24,6 +26,8 @@ const Signup = () => {
     password: "",
     about: "",
   });
+
+  let navigate = useNavigate();
 
   const [error, setError] = useState({
     errors: {},
@@ -71,6 +75,7 @@ const Signup = () => {
           password: "",
           about: "",
         });
+        navigate('/login', { replace: true });
       })
       .catch((error) => {
         console.log(error);
